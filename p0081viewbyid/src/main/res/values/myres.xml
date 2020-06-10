@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="topText">Верхній текст</string>
+    <string name="btmText">Нижній текст</string>
+    <string name="topBtnText">Верхня кнопка</string>
+    <string name="btmBtnText">Нижня кнопка</string>
+    <color name="llTopColor">#5EA66D</color>
+    <color name="llBtmColor">#5E76A6</color>
+</resources>
