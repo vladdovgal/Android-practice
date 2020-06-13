@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/font20"
+            android:orderInCategory="1"
+            android:title="20">
+        </item>
+        <item
+            android:id="@+id/font30"
+            android:orderInCategory="2"
+            android:title="30">
+        </item>
+        <item
+            android:id="@+id/font40"
+            android:orderInCategory="3"
+            android:title="40">
+        </item>
+        <item
+            android:id="@+id/font50"
+            android:orderInCategory="3"
+            android:title="50">
+        </item>
+</menu>

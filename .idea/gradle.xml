@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/p00151contextmenu" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
             <option value="$PROJECT_DIR$/p0041basicviews" />
             <option value="$PROJECT_DIR$/p0051layoutfiles" />
@@ -18,6 +19,8 @@
             <option value="$PROJECT_DIR$/p0081viewbyid" />
             <option value="$PROJECT_DIR$/p0121logsandmessages" />
             <option value="$PROJECT_DIR$/p0141menuadv" />
+            <option value="$PROJECT_DIR$/p0161dynamiclayout" />
+            <option value="$PROJECT_DIR$/p0171dynamiclayout2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

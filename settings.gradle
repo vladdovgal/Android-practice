@@ -1,3 +1,6 @@
+include ':p0171dynamiclayout2'
+include ':p0161dynamiclayout'
+include ':p00151contextmenu'
 include ':p0141menuadv'
 include ':p0121logsandmessages'
 include ':p0081viewbyid'
