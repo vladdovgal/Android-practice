@@ -63,7 +63,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, "Cleared",Toast.LENGTH_LONG).show();
                 break;
         }
-
-
     }
 }
