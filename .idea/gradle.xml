@@ -24,6 +24,8 @@
             <option value="$PROJECT_DIR$/p0181dynamiclayout3" />
             <option value="$PROJECT_DIR$/p0191simplecalculator" />
             <option value="$PROJECT_DIR$/p0201animations" />
+            <option value="$PROJECT_DIR$/p0211twoactivities" />
+            <option value="$PROJECT_DIR$/p0221oneactivitystate" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
