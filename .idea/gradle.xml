@@ -26,6 +26,8 @@
             <option value="$PROJECT_DIR$/p0201animations" />
             <option value="$PROJECT_DIR$/p0211twoactivities" />
             <option value="$PROJECT_DIR$/p0221oneactivitystate" />
+            <option value="$PROJECT_DIR$/p0261intentfilter" />
+            <option value="$PROJECT_DIR$/p0271getintentaction" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

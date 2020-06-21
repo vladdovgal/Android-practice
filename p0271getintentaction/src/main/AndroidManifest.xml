@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dovhal.p0221oneactivitystate">
+    package="com.dovhal.p0271getintentaction">
 
     <application
         android:allowBackup="true"
@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityTwo"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+        <activity android:name=".DateTimeActivity">
+            <intent-filter android:label="Date/time info">
+                <action android:name="com.dovhal.intent.showtime"/>
+                <action android:name="com.dovhal.intent.showdate"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

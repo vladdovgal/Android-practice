@@ -1,3 +1,5 @@
+include ':p0271getintentaction'
+include ':p0261intentfilter'
 include ':p0221oneactivitystate'
 include ':p0211twoactivities'
 include ':p0201animations'
