@@ -1,3 +1,6 @@
+include ':p0301activityresult'
+include ':p0291simpleactivityresult'
+include ':p0281intentextras'
 include ':p0271getintentaction'
 include ':p0261intentfilter'
 include ':p0221oneactivitystate'

@@ -19,7 +19,8 @@ public class DateTimeActivity extends AppCompatActivity {
         String action = intent.getAction();
         String format = "", textInfo = "";
 
-        if (action=="com.dovhal.intent.showtime"){
+        assert action != null;
+        if (action.equals("com.dovhal.intent.showtime")){
             format = "HH:mm:ss";
             textInfo = "Time: ";
         } else if (action.equals("com.dovhal.intent.showdate")){
