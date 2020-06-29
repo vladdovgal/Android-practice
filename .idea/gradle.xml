@@ -31,6 +31,8 @@
             <option value="$PROJECT_DIR$/p0281intentextras" />
             <option value="$PROJECT_DIR$/p0291simpleactivityresult" />
             <option value="$PROJECT_DIR$/p0301activityresult" />
+            <option value="$PROJECT_DIR$/p0331sharedpreferences" />
+            <option value="$PROJECT_DIR$/p321simplebrowser" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

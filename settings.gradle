@@ -1,3 +1,5 @@
+include ':p0331sharedpreferences'
+include ':p321simplebrowser'
 include ':p0301activityresult'
 include ':p0291simpleactivityresult'
 include ':p0281intentextras'
