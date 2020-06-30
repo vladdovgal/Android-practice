@@ -22,7 +22,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etText = findViewById(R.id.etText);
         findViewById(R.id.btnSave).setOnClickListener(this);
         findViewById(R.id.btnLoad).setOnClickListener(this);
+        // data loads every time when application is launched
         loadText();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // data saves every time when application is closed
+        saveText();
     }
 
     @Override
@@ -44,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          M0DE_PRIVATE is access constant, means that after saving data will be
          available only in current application */
         sPref = getPreferences(MODE_PRIVATE);
+        // or with Shared Preferences we can specify filepath
+        // sPref = getSharedPreferences("MyPrefFile", MODE_PRIVATE);
         /* Modifications to the preferences must go through an Editor object to ensure
          the preference values remain in a consistent state and control when they
          are committed to storage */
