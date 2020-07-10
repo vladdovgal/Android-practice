@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // prepare data for insertion
                 contentValues.put("name", name);
                 contentValues.put("email", email);
-
+                // data insertion, returns number of changed row
                 long rowId = database.insert("my_table", null, contentValues);
                 Log.d(LOG_TAG, "-- Row inserted, row id = " + rowId + " --");
                 Toast.makeText(this, "Added", Toast.LENGTH_SHORT).show();
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Log.d(LOG_TAG,"ID = " + cursor.getInt(idIndex) +
                                 ", name = " + cursor.getString(nameIndex) +
                                 ", email = " + cursor.getString(emailIndex));
-                        // go to next row
+                        // go to the next row
                         // if next row is absent, returns false
                     } while (cursor.moveToNext());
                 } else {

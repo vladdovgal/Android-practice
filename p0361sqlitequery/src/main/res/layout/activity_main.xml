@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All countries"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFunction"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPopulationMore"
+            android:layout_weight="1"
+            android:text="from"/>
+        <Button
+            android:id="@+id/btnPopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPopulationLess"
+            android:layout_weight="1"
+            android:text="to"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Population by continent"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etContinentMore"
+            android:layout_weight="1"
+            android:text="from"/>
+        <Button
+            android:id="@+id/btnPopulationCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etContinentLess"
+            android:layout_weight="1"
+            android:text="to"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by"/>
+        <RadioGroup
+            android:id="@+id/rgSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <RadioButton
+                android:id="@+id/rbName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rbPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Population"/>
+            <RadioButton
+                android:id="@+id/rbContinent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continent" />
+        </RadioGroup>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+    </ListView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
