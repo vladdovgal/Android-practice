@@ -82,12 +82,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // check if table is not empty
         Cursor cursor = database.query("countries", null, null,
                 null, null, null, null);
-        int k = 0;
         if (cursor.getCount() != 0) {
             ContentValues values = new ContentValues();
             // fill table from allCountries List
             for (Country country : allCountries) {
-                Log.d(LOG_TAG, "a" + ++k);
                 values.put("id", country.getId());
                 values.put("name", country.getName());
                 values.put("population", country.getPopulation());
@@ -162,8 +160,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(LOG_TAG, " -- Population by continent -- ");
                 columns = new String[]{"continent", "sum(population) as population"};
                 groupBy = "continent";
-                having = "sum(population) > " + contPopLeft + "AND sum (population) <" +
-                        contPopRight;
+                having = "sum(population) > " + contPopLeft + " and sum(population) < " + contPopRight;
                 cursor = database.query("countries", columns, null, null,
                         groupBy, having, null);
                 break;
