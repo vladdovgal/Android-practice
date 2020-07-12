@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // initialisation block
+        // initialization block
         btnAll = findViewById(R.id.btnAll);
         btnAll.setOnClickListener(this);
 
@@ -82,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // check if table is not empty
         Cursor cursor = database.query("countries", null, null,
                 null, null, null, null);
-        if (cursor.getCount() != 0) {
+
+        if (cursor.getCount() == 0) {
             ContentValues values = new ContentValues();
             // fill table from allCountries List
             for (Country country : allCountries) {
@@ -94,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         null, values));
             }
         }
+        database.execSQL("DELETE FROM countries");
         cursor.close();
         dbHelper.close();
         // emulating press of btnAll
@@ -120,10 +123,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String having = null;
         String orderBy = null;
 
-        // cursor
+        // cursor and list for result
         Cursor cursor = null;
+        List<String> result = new LinkedList<>();
 
-        // determine button pressed;
+        // processing button click
         switch (v.getId()) {
             // all data
             case R.id.btnAll:
@@ -186,6 +190,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
 
+        // process data from query
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 String str;
@@ -196,12 +201,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 + cursor.getString(cursor.getColumnIndex(cn)) + "; ");
                     }
                     Log.d(LOG_TAG, str);
+                    result.add(str);
 
                 } while (cursor.moveToNext());
             }
             cursor.close();
-        } else
+        } else{
             Log.d(LOG_TAG, "Cursor is null");
+        }
+        // Adapter to pass data from List<String> to ListView
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(
+                this, android.R.layout.simple_list_item_1, result
+        );
+        lvCountries.setAdapter(stringArrayAdapter);
 
         dbHelper.close();
     }

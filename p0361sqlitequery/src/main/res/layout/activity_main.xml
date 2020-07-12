@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/etPopulationMore"
             android:layout_weight="1"
+            android:hint="From"
             android:inputType="numberDecimal" />
         <Button
             android:id="@+id/btnPopulation"
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/etPopulationLess"
             android:layout_weight="1"
+            android:hint="To"
             android:inputType="numberDecimal" />
     </LinearLayout>
 
@@ -62,13 +64,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <EditText
+            android:id="@+id/etContinentMore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etContinentMore"
             android:layout_weight="1"
-            android:inputType="numberDecimal"
-            android:text="from"/>
+            android:hint="From"
+            android:inputType="numberDecimal" />
         <Button
             android:id="@+id/btnPopulationCont"
             android:layout_width="wrap_content"
@@ -81,8 +84,7 @@
             android:id="@+id/etContinentLess"
             android:layout_weight="1"
             android:inputType="numberDecimal"
-
-            android:text="to"/>
+            android:hint="To"/>
     </LinearLayout>
     
     <LinearLayout
