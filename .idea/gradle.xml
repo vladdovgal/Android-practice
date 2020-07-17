@@ -11,6 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/k001hb" />
+            <option value="$PROJECT_DIR$/k002diceroller" />
             <option value="$PROJECT_DIR$/p00151contextmenu" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
             <option value="$PROJECT_DIR$/p0041basicviews" />
@@ -31,11 +33,11 @@
             <option value="$PROJECT_DIR$/p0281intentextras" />
             <option value="$PROJECT_DIR$/p0291simpleactivityresult" />
             <option value="$PROJECT_DIR$/p0301activityresult" />
+            <option value="$PROJECT_DIR$/p0321simplebrowser" />
             <option value="$PROJECT_DIR$/p0331sharedpreferences" />
             <option value="$PROJECT_DIR$/p0341simplesqlite" />
             <option value="$PROJECT_DIR$/p0361sqlitequery" />
             <option value="$PROJECT_DIR$/p0371sqliteinnerjoin" />
-            <option value="$PROJECT_DIR$/p321simplebrowser" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -6,5 +6,6 @@ enum class Position(salary: Int) {
     ACCOUNTANT(9000),
     CLEANER(6000);
 
+
     var salary: Int = 0;
 }
