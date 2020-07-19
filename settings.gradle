@@ -1,3 +1,6 @@
+include ':k004layoutcolorswitcher'
+include ':k003aboutmeinteractivestarter'
+include ':p0381sqlitetransaction'
 include ':k002diceroller'
 include ':k001hb'
 include ':p0371sqliteinnerjoin'

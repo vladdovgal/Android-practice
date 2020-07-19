@@ -44,10 +44,9 @@ import kotlin.concurrent.schedule
                 5 -> R.drawable.dice_5
                 6 -> R.drawable.dice_6
                 else -> {
-//                    Toast.makeText(this,"Something went wrong", Toast.LENGTH_SHORT)
-//                            .show()
+                    Toast.makeText(this,"Something went wrong", Toast.LENGTH_SHORT)
+                            .show()
                     R.drawable.dice_1
-
                 }
             }
             /* assign resource */

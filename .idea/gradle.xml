@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/k001hb" />
             <option value="$PROJECT_DIR$/k002diceroller" />
+            <option value="$PROJECT_DIR$/k003aboutmeinteractivestarter" />
+            <option value="$PROJECT_DIR$/k004layoutcolorswitcher" />
             <option value="$PROJECT_DIR$/p00151contextmenu" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
             <option value="$PROJECT_DIR$/p0041basicviews" />
@@ -38,6 +40,7 @@
             <option value="$PROJECT_DIR$/p0341simplesqlite" />
             <option value="$PROJECT_DIR$/p0361sqlitequery" />
             <option value="$PROJECT_DIR$/p0371sqliteinnerjoin" />
+            <option value="$PROJECT_DIR$/p0381sqlitetransaction" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

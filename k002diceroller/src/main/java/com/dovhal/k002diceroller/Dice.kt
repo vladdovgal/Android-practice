@@ -7,7 +7,10 @@ package com.dovhal.k002diceroller
  * @version 1.0
  */
 class Dice(private val sides : Int) {
-
+    /**
+     * roll() - method designed for imitating of dice rolling
+     * @return random number in range (1, N) N = quantity of sides
+     **/
     fun roll() : Int {
         return (1..sides).random()
     }
