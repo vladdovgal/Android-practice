@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     DBHelper dbHelper;
     SQLiteDatabase database;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

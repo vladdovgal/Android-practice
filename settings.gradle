@@ -1,3 +1,4 @@
+include ':k005trivia'
 include ':k004layoutcolorswitcher'
 include ':k003aboutmeinteractivestarter'
 include ':p0381sqlitetransaction'
