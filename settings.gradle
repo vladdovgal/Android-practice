@@ -1,3 +1,4 @@
+include ':k006recyclerview'
 include ':k005trivia'
 include ':k004layoutcolorswitcher'
 include ':k003aboutmeinteractivestarter'
